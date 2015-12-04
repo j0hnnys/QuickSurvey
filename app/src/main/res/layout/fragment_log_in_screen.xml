@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+              android:background="@android:color/white">
+
+    <TextView
+        android:elevation="10dp"
+        android:paddingTop="30dp"
+        android:gravity="center"
+        android:text="Please login or sign up"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:background="@android:color/holo_blue_dark">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textSize="24sp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/username_edit_text"
+            />
+
+        <EditText
+            android:id="@+id/username_edit_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textSize="24sp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/password_edit_text"
+            />
+
+        <EditText
+            android:id="@+id/password_edit_text"
+            android:inputType="textPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password_repeat"
+            android:textSize="24sp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/password_retype_text"
+            />
+
+        <EditText
+            android:id="@+id/password_repeat_edit_text"
+            android:inputType="textPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp">
+
+        <CheckBox
+            android:id="@+id/show_password_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_password"
+            android:textSize="16sp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/show_password_checkbox"
+            />
+
+    </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp">
+
+        <Button
+            android:id="@+id/create_account_button"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/create_account"
+            style="@style/ButtonTheme"/>
+
+        <Button
+            android:id="@+id/log_in_button"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/log_in"
+            style="@style/ButtonTheme"/>
+
+    </LinearLayout>
+
+</LinearLayout>

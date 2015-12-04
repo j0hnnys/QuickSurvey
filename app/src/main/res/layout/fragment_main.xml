@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    style="@style/AppTheme">
+
+    <TextView
+        android:text="Choose an option:"
+        android:textColor="@android:color/black"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/take_survey_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            style="@style/ButtonTheme"
+            android:text="Take a survey"/>
+
+        <android.widget.Space
+            android:layout_width="1dp"
+            android:layout_height="10dp"/>
+
+        <Button
+            android:id="@+id/create_survey_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            style="@style/ButtonTheme"
+            android:text="Create a survey"/>
+
+
+        <android.widget.Space
+            android:layout_width="1dp"
+            android:layout_height="10dp"/>
+
+        <Button
+            android:id="@+id/results_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            style="@style/ButtonTheme"
+            android:text="Survey results"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/take_survey_image_view"
+            android:src="@drawable/survey_take"
+            android:layout_weight="1"
+            android:elevation="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/create_survey_image_view"
+            android:src="@drawable/survey_create"
+            android:layout_weight="1"
+            android:elevation="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/survey_result_image_view"
+            android:src="@drawable/survey_results"
+            android:layout_weight="1"
+            android:elevation="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
